@@ -15,5 +15,10 @@ def speak_to_grandma(str)
   if str == "I LOVE YOU GRANDMA!"
     puts "I LOVE YOU TOO PUMPKIN"
   end
-  elsif 
+  elsif !str.match('[A-Z')
+    puts "HUH?! SPEAK UP, SONNY!"
+  end
+  else
+    puts "NO, NOT SINCE 1938!"
+  end
 end
