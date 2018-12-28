@@ -15,7 +15,7 @@ def speak_to_grandma(str)
   puts str.match('[A-Z]')
   if str == "I LOVE YOU GRANDMA!"
     return "I LOVE YOU TOO PUMPKIN!"
-  elsif !str.match('[A-Z]')
+  elsif ![[:upper]].match(str)
     return "HUH?! SPEAK UP, SONNY!"
   else
     return "NO, NOT SINCE 1938!"
